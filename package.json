@@ -1,0 +1,23 @@
+{
+  "name": "@altimho/ts-sandbox",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "test": "tsc -p . --noEmit",
+    "exec": "tsx ./src/index.ts",
+    "watch": "node --watch-path ./src ./node_modules/.bin/tsx ./src/index.ts",
+    "start": "npm run watch"
+  },
+  "author": "Igor Karpinskiy <ik@altimho.com>",
+  "license": "MIT",
+  "description": "A tiny script to run JS/TS code in the console.",
+  "dependencies": {
+    "@tsconfig/node18": "^18",
+    "@types/node": "^18",
+    "tsx": "^4",
+    "typescript": "^5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
